@@ -6,7 +6,7 @@ import { ManageTeacherPageComponent } from './page/manage-teacher-page/manage-te
 
 export const routes: Routes = [
     {
-        path:"add-customer",
+        path:"",
         component:AddCustomerPageComponent
     },
     {

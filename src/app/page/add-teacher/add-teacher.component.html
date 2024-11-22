@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Student Page</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,7 +18,7 @@
             align-items: center;
             padding: 20px;
         }
-        input[type="text"], input[type="date"] {
+         input[type="text"], input[type="date"] {
             font-size: 18px;
             padding: 8px;
             width: 100%;
@@ -32,7 +27,7 @@
             display: block;
             border: 1px solid #ccc;
             border-radius: 4px;
-        }
+        } 
         .button {
             font-size: 18px;
             padding: 10px 20px;
@@ -42,7 +37,7 @@
             border-radius: 4px;
             cursor: pointer;
             margin-top: 15px;
-        }
+        } 
         .date-picker-container {
             text-align: center;
             margin-top: 20px;
@@ -55,15 +50,32 @@
             margin-bottom: 5px;
         }
         .footer {
-            background-color: #3535f6;
+            background-color: #0000FF;
             height: 50px;
             position: absolute;
             width: 100%;
             bottom: 0;
         }
     </style>
-</head>
 
-</html>
 
+    <div class="header">Add Teacher Page</div>
+
+    <div class="container">
+        <input type="text" placeholder="Name" [(ngModel)]="teacher.teacherName">
+        <input type="text" placeholder="Address" [(ngModel)]="teacher.teacherAddress">
+        <input type="text" placeholder="Email" [(ngModel)]="teacher.teacherEmail">
+
+        
+        <input type="button" class="button" value="Add Teacher" (click)="addTeacher()">
+    </div>
+
+    <div class="footer"></div>
+
+  
+    <div style="text-align: center; margin-top: 20px;">
+        <h1>{{teacher.teacherName}}</h1>
+        <h1>{{teacher.teacherAddress}}</h1>
+        <h1>{{teacher.teacherEmail}}</h1>
+       </div>
 
